@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newtons 2nd law</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="lab">
+        <h1>Newton's Second Law</h1>
+        
+        <div class="track">
+            <div id="cart">
+                <span id="massLabelInside">5</span>kg
+            </div>
+        </div>
+
+        <div class="panel">
+            <p>Force: <input type="range" id="fInput" min="10" max="100" value="50"> <span id="fLabel">50</span> N</p>
+            <p>Mass: <input type="range" id="mInput" min="1" max="10" value="5"> <span id="mLabel">5</span> kg</p>
+            
+            <button onclick="startSim()">Go</button>
+            <button onclick="resetSim()">Reset</button>
+        </div>
+
+        <h2>Acceleration: <span id="aDisplay">0</span> m/s²</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
